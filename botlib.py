@@ -321,13 +321,13 @@ def parsemsg(info, msg, sender):
             ret = 'PRIVMSG ' + info[2] + ' :Current available commands:\n' + \
                   'PRIVMSG ' + info[2] + ' :Command       |Use                                     |Example\n'         + \
                   'PRIVMSG ' + info[2] + ' ================================================================\n'         + \
-                  'PRIVMSG ' + info[2] + ' :!say          |Makes the bot print a message           |"!say Hello"\n'    + \
+                  'PRIVMSG ' + info[2] + ' :!say          |Makes the bot print a message           |!say <message>\n'  + \
                   'PRIVMSG ' + info[2] + ' :!list_admins  |Lists current administrators            |\n'                + \
-                  'PRIVMSG ' + info[2] + ' :!seen         |Prints last time a user was seen        |"!seen <user>"\n'  + \
-                  'PRIVMSG ' + info[2] + ' :!calc         |Performs basic calculations             |"!calc 2+2"\n'     + \
+                  'PRIVMSG ' + info[2] + ' :!seen         |Prints last time a user was seen        |!seen <user>\n'    + \
+                  'PRIVMSG ' + info[2] + ' :!calc         |Performs basic calculations             |!calc <function>\n'+ \
                   'PRIVMSG ' + info[2] + ' :!insult       |Prints a random insult                  |\n'                + \
-                  'PRIVMSG ' + info[2] + ' :!rps          |Begins a game of Rock-Paper-Scissors    |"!rps 0"\n'        + \
-                  'PRIVMSG ' + info[2] + ' :!ttt          |Begins a game of tic tac toe            |"!ttt 5"\n'        + \
+                  'PRIVMSG ' + info[2] + ' :!rps          |Begins a game of Rock-Paper-Scissors    |!rps <number>\n'   + \
+                  'PRIVMSG ' + info[2] + ' :!ttt          |Begins a game of tic tac toe            |!ttt <number>\n'   + \
                   'PRIVMSG ' + info[2] + ' :!uptime       |Shows how long the bot has been running |\n'
 # The !admin_help command lists commands available only to admins
         if cmd[0] == '!admin_help' and sender in ADMINS:
